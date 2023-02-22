@@ -1,0 +1,98 @@
+:root{
+    /* I really like the nord color scheme so im going to import the swaths as variables */
+    --backg: #292e39;
+    /* Polar Night */
+	--nord0: #2e3440;
+	--nord1: #3b4252;
+	--nord2: #434c5e;
+	--nord3: #4c566a;
+	/* Snowstorm */
+	--nord4: #d8dee9;
+	--nord5: #e5e9f0;
+	--nord6: #eceff4;
+	/* Frost */
+	--nord7: #8fbcbb;
+	--nord8: #88c0d0;
+	--nord9: #81a1c1;
+	--nord10: #5e81ac;
+	/* Aurora */
+	--nord11: #bf616a;
+	--nord12: #d08770;
+	--nord13: #ebcb8b;
+	--nord14: #a3be8c;
+	--nord15: #b48ead;
+}
+
+body{
+    background-color: var(--backg);
+    color: var(--nord4);
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: var(--nord4);
+}
+a:hover{
+    text-decoration: underline;
+    color: var(--nord4);
+}
+
+/* classes for when we want to color a div a certian coler */
+.yellow{
+    background-color: var(--nord13);
+}
+.green{
+    background-color: var(--nord14);
+}
+.blue{
+    background-color: var(--nord8);
+}
+.purple{
+    background-color: var(--nord15);
+}
+
+/* Navigation Menu */
+.navbar{
+    text-align: center;
+    color: var(--nord6);
+}
+.navbar h1{
+    background-color: var(--nord9);
+    max-width: 16em;
+    border-radius: 0.5em;
+    /* for some reason this needs to be set for the header to be centered */
+    margin-left: auto;
+    margin-right: auto;
+    /* givving a bit of padding to the top and bottom of the header to make it look nicer */
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.navbar a, .navbar a:hover{
+    color: var(--nord0);
+}
+.navbar ul{
+    width: 100%;
+    padding: 0;
+}
+.navbar li{
+    display: inline-block;
+    min-width: 10em;
+    border-radius: 0.5em;
+}
+
+/* Page content */
+.content{
+    background-color: var(--nord1);
+    border-radius: 1em;
+    max-width: 48em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em 0em 3em;
+}
+.content img{
+    border-radius: 1em;
+}
+.content p{
+    text-align: left;
+    padding: 1em 2em;
+}
