@@ -81,7 +81,7 @@ a:hover{
 }
 
 /* Page content */
-.content{
+.home{
     background-color: var(--nord1);
     border-radius: 1em;
     max-width: 48em;
@@ -89,10 +89,10 @@ a:hover{
     margin-right: auto;
     padding: 1em 0em 3em;
 }
-.content img{
+.home img{
     border-radius: 1em;
 }
-.content p{
+.home p{
     text-align: left;
     padding: 1em 2em;
 }
