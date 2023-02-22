@@ -96,3 +96,26 @@ a:hover{
     text-align: left;
     padding: 1em 2em;
 }
+
+/* The github profile thing */
+#gh{
+    background-color: var(--nord0);
+    border-radius: 1em;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    max-width: 24em;
+    height: 10em;
+    margin-left: auto;
+    margin-right: auto;
+}
+#gh img{
+    margin-left: 15%;
+    border-radius: 5em;
+    max-width: 10em;
+    max-height: 50%;
+}
+#gh #link{
+    flex-grow: 1;
+    text-align: center;
+}
