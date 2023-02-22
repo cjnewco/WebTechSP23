@@ -63,7 +63,6 @@ a:hover{
     /* for some reason this needs to be set for the header to be centered */
     margin-left: auto;
     margin-right: auto;
-    /* givving a bit of padding to the top and bottom of the header to make it look nicer */
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
@@ -83,7 +82,7 @@ a:hover{
 
 /* Page content */
 .home{
-    background-color: var(--nord1);
+    background-color: var(--nord0);
     border-radius: 1em;
     max-width: 48em;
     margin-left: auto;
@@ -100,7 +99,8 @@ a:hover{
 
 /* The github profile thing */
 #gh{
-    background-color: var(--nord0);
+    background-color: var(--nord1);
+    border: 1px solid var(--nord2);
     border-radius: 1em;
     display: flex;
     justify-content: left;
@@ -119,4 +119,80 @@ a:hover{
 #gh #link{
     flex-grow: 1;
     text-align: center;
+}
+
+/* Generic content wrapper for other pages */
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--nord0);
+    border-radius: 1em;
+    margin: auto 5%;
+}
+.content p{
+    padding: 0.5em 1em;
+}
+.content h2{
+    margin-top: 1.5em;
+    margin-bottom: 0;
+}
+.content .break{
+    flex-basis: 100%;
+    height: 0;
+}
+
+/* Specific css for the schedule table */
+#sched{
+    margin-left: 2%;
+    margin-right: auto;
+    border-radius: 1em;
+    padding: 0.5em 0.5em;
+}
+#sched table{
+    border: 1px solid var(--nord2);
+    background-color: var(--nord1);
+    border-radius: 1em;
+    min-height: 10em;
+}
+#sched .course{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+#sched .endrow{
+    padding-right: 0.5em;
+}
+#roadrunner{
+    margin-top: 1em;
+    flex-grow: 1;
+    margin-right: auto;
+    max-height: 5em;
+}
+
+/* Specific css for the work paragraph */
+#career{
+    text-align: left;
+    align-self: flex-start;
+    border-radius: 1em;
+    padding: 0.5em 0.5em;
+    margin-left: 2%;
+    margin-right: auto;
+    max-width: 60%;
+}
+#career h3{
+    text-align: center;
+}
+
+/* css for the virgil picture */
+#virgil{
+    max-width: 33%;
+}
+#virgil img{
+    border: 1px solid var(--nord2);
+    border-radius: 2em;
+}
+#virgil .caption{
+    color: var(--nord2);
+    font-size: small;
 }
