@@ -78,6 +78,7 @@ a:hover{
     display: inline-block;
     min-width: 10em;
     border-radius: 0.5em;
+    margin: 0.5em 0.1em;
 }
 
 /* Page content */
