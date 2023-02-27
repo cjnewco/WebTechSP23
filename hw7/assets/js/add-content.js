@@ -15,4 +15,4 @@ else{
     greeting = 'Welcome!';
 }
 
-document.write('<h3>' + greeting + '</h3>');
+document.getElementById('greeting').innerHTML = greeting;
