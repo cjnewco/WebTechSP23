@@ -25,6 +25,10 @@ function calculate(){
                 output = aone*atwo;
                 break;
             case "/":
+                if(atwo == 0){
+                    output = "Error: cannot divide by zero";
+                    break;
+                }
                 output = aone/atwo;
                 break;
             case Default:
