@@ -18,16 +18,12 @@
                 echo '<button type="submit" name="submit" value="submit">Submit</button>';
                 echo '</form>';
             }
-            else{
+            if (isset($_POST['submit'])){
                 if (($fname=$_REQUEST['firstname'])==""){
                     header('Location: https://ec2-3-144-234-72.us-east-2.compute.amazonaws.com/hw10/request.php?fname=err');
                 }
-                if (($lname=$_REQUEST['lastname'])==""){
-                    header('Location: https://ec2-3-144-234-72.us-east-2.compute.amazonaws.com/hw10/request.php?lname=err');
-                }
-                if (($email=$_REQUEST['email'])==""){
-                    header('Location: https://ec2-3-144-234-72.us-east-2.compute.amazonaws.com/hw10/request.php?email=err');
-                }
+                $lname=$_REQUEST['lastname'];
+                $email=$_REQUEST['email'];
 
                 echo '<h3>Data Recieved from index.php:</h3>';
                 echo '<p>First name: '.$fname.'</p>';
