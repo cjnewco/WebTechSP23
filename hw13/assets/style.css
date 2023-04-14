@@ -1,0 +1,239 @@
+:root{
+    /* I really like the nord color scheme so im going to import the swaths as variables */
+    --backg: #292e39;
+    /* Polar Night */
+    --nord0: #2e3440;
+    --nord1: #3b4252;
+    --nord2: #434c5e;
+    --nord3: #4c566a;
+    /* Snowstorm */
+    --nord4: #d8dee9;
+    --nord5: #e5e9f0;
+    --nord6: #eceff4;
+    /* Frost */
+    --nord7: #8fbcbb;
+    --nord8: #88c0d0;
+    --nord9: #81a1c1;
+    --nord10: #5e81ac;
+    /* Aurora */
+    --nord11: #bf616a;
+    --nord12: #d08770;
+    --nord13: #ebcb8b;
+    --nord14: #a3be8c;
+    --nord15: #b48ead;
+}
+
+body{
+    background-color: var(--backg);
+    color: var(--nord4);
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: var(--nord4);
+}
+a:hover{
+    text-decoration: underline;
+    color: var(--nord4);
+}
+abbr{
+    text-decoration: none;
+}
+h3{
+    text-align: center;
+}
+
+/* classes for when we want to color a div a certian coler */
+.yellow{
+    background-color: var(--nord13);
+}
+.green{
+    background-color: var(--nord14);
+}
+.blue{
+    background-color: var(--nord8);
+}
+.purple{
+    background-color: var(--nord15);
+}
+
+/* Navigation Menu */
+.navbar{
+    text-align: center;
+    color: var(--nord6);
+}
+.navbar h1{
+    background-color: var(--nord9);
+    max-width: 16em;
+    border-radius: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.navbar a, .navbar a:hover{
+    color: var(--nord0);
+}
+.navbar ul{
+    width: 100%;
+    padding: 0;
+}
+.navbar li{
+    display: inline-block;
+    min-width: 10em;
+    border-radius: 0.5em;
+    margin: 0.5em 0.1em;
+}
+
+/* Page content */
+.home{
+    background-color: var(--nord0);
+    border-radius: 1em;
+    max-width: 48em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em 0em 3em;
+}
+.home img{
+    border-radius: 1em;
+}
+.home p{
+    text-align: left;
+    padding: 1em 2em;
+}
+
+/* The github profile thing */
+#gh{
+    background-color: var(--nord1);
+    border: 1px solid var(--nord2);
+    border-radius: 1em;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    max-width: 24em;
+    height: 10em;
+    margin-left: auto;
+    margin-right: auto;
+}
+#gh img{
+    margin-left: 15%;
+    border-radius: 5em;
+    max-width: 10em;
+    max-height: 50%;
+}
+#gh #link{
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Generic content wrapper for other pages */
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--nord0);
+    border-radius: 1em;
+    margin: auto 5%;
+}
+.content p{
+    padding: 0.5em 1em;
+}
+.content h2{
+    margin-top: 1.5em;
+    margin-bottom: 0;
+}
+.content .break{
+    flex-basis: 100%;
+    height: 0;
+}
+
+/* Specific css for the schedule table */
+#sched{
+    margin-left: 10%;
+    margin-right: auto;
+    border-radius: 1em;
+    padding: 0.5em 0.5em;
+}
+#sched table{
+    border: 1px solid var(--nord2);
+    background-color: var(--nord1);
+    border-radius: 1em;
+    min-height: 10em;
+}
+#sched .course{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+#sched .endrow{
+    padding-right: 0.5em;
+}
+#roadrunner{
+    margin-top: 1em;
+    flex-grow: 1;
+    margin-right: auto;
+    max-height: 5em;
+}
+
+/* Specific css for the work paragraph */
+#career{
+    text-align: left;
+    border-radius: 1em;
+    padding: 0.5em 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+}
+
+/* css for the virgil picture */
+.cats{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 66%;
+
+}
+.cats img{
+    border: 1px solid var(--nord2);
+    border-radius: 2em;
+}
+#virgil .caption{
+    color: var(--nord2);
+    font-size: small;
+}
+
+/* CSS for flex items on the Hobbies page*/
+
+.hobbytxt{
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 60%;
+}
+.hobbyimg{
+    border-radius: 1em;
+    max-width: 10em;
+    max-height: 12em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CSS for the contact me input box */
+#mbox{
+    margin: 5% auto;
+    padding: 1em 0.5em;
+    background-color: var(--nord1);
+    color: var(--nord4);
+    width: 60%;
+    height: 20em;
+    border: 1px solid var(--nord3);
+    border-radius: 1em;
+    text-align: left;
+}
+#mbox:focus{
+    outline: none !important;
+    border: 1px solid var(--nord10);
+}
+#mbox::placeholder{
+    color: var(--nord11);
+}
