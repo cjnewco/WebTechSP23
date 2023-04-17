@@ -4,7 +4,7 @@
             if (!isset($_POST['submit'])){
                 echo '<form action="" method="post">';
                 echo '<p>First Name:';
-                if(!isset($_GET['first']) && $_GET['first'] != ''){
+                if(isset($_GET['first']) && $_GET['first'] != ''){
                     echo '<input type="text" name="firstname" value="'.$_GET['first'].'">';
                 }
                 else{
@@ -16,17 +16,30 @@
                 echo '</p>';
 
                 echo '<p>Last Name:';
-                echo '<input type="text" name="lastname" id="lastname" class="lastname">';
-                if (isset($_REQUEST['lnameErr'])){
-                    echo '<p><span style="color:F00">Error: Last name cannot be blank!</span></p>';
+                if(isset($_GET['last']) && $_GET['last'] != ''){
+                    echo '<input type="text" name="lastname" value="'.$_GET['last'].'">';
+                }
+                else{
+                    echo '<input type="text" name="lastname">';
+                    if (isset($_REQUEST['lnameErr'])){
+                        echo '<p><span style="color:F00">Error: Last name cannot be blank!</span></p>';
+                    }
                 }
                 echo '</p>';
+
+
                 echo '<p>Email:';
-                echo '<input type="text" name="email" id="email" class="email">';
-                if (isset($_REQUEST['emailErr'])){
-                    echo '<p><span style="color:F00">Error: Email cannot be blank!</span></p>';
+                if(isset($_GET['mail']) && $_GET['mail'] != ''){
+                    echo '<input type="text" name="email" value="'.$_GET['mail'].'">';
+                }
+                else{
+                    echo '<input type="text" name="email">';
+                    if (isset($_REQUEST['emailErr'])){
+                        echo '<p><span style="color:F00">Error: Email cannot be blank!</span></p>';
+                    }
                 }
                 echo '</p>';
+
                 echo '<button type="submit" name="submit" value="submit">Submit</button>';
                 echo '</form>';
             }
