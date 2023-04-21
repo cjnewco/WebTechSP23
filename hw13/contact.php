@@ -15,7 +15,7 @@
             <li class="purple"><a href="./contact.html">Contact</a></li>
         </ul>
     </div>
-    <div class="content">
+    <div class="contact">
         <div class="break"></div>
         <?php
 
@@ -33,7 +33,6 @@
             echo '<p>Phone Number: ';
             echo '<input type="text" name="phone_number">';
             echo '</p>';
-            
             echo '<p>Comments: ';
             echo '<input type="text" name="comments">';
             echo '</p>';

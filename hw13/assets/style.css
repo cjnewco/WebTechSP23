@@ -219,21 +219,23 @@ h3{
 }
 
 /* CSS for the contact me input box */
-#mbox{
-    margin: 5% auto;
-    padding: 1em 0.5em;
+.contact{
+    text-align: center;
+    background-color: var(--nord0);
+    border-radius: 1em;
+    max-width: 48em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em 0em 3em;
+}
+
+.contact input{
     background-color: var(--nord1);
     color: var(--nord4);
-    width: 60%;
-    height: 20em;
     border: 1px solid var(--nord3);
-    border-radius: 1em;
-    text-align: left;
+    border-radius: 0.25em;
 }
-#mbox:focus{
+.contact input:focus{
     outline: none !important;
     border: 1px solid var(--nord10);
-}
-#mbox::placeholder{
-    color: var(--nord11);
 }
