@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Contact Me</title>
-<link rel="stylesheet" href="./assets/style.css">
+<link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <div class="navbar">
@@ -12,7 +12,7 @@
             <li class="yellow"><a href=".">Home</a></li>
             <li class="green"><a href="./about.html">About</a></li>
             <li class="blue"><a href="./hobbies.html">Hobbies</a></li>
-            <li class="purple"><a href="./contact.html">Contact</a></li>
+            <li class="purple"><a href="./contact.php">Contact</a></li>
         </ul>
     </div>
     <div class="contact">
